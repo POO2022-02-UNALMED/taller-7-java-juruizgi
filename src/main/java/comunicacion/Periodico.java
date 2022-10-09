@@ -14,6 +14,24 @@ public class Periodico extends Escrito {
         
     }
     
+    public void setFecha(String fecha){
+        this.fecha = fecha;
+    }
+    
+    public String getFecha(){
+        return fecha;
+    }
+    
+    
+    public void setPrimicia(String primicia){
+        this.primicia = primicia;
+    }
+    
+    public String getPrimicia(){
+        return primicia;
+    }
+    
+    
     
     
     public void setInterpretacion(String interpretacion){
@@ -25,12 +43,12 @@ public class Periodico extends Escrito {
     }
     
     @Override
-    String interpretacion(){
+    public String interpretacion(){
        return interpretacion; 
     }
     
     @Override
-    int palabrasTotales(int palabrasPaginas){
+    public int palabrasTotales(int palabrasPaginas){
         return getPaginas()*palabrasPaginas*10;
     }
     
